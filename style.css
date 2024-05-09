@@ -1,0 +1,101 @@
+/*INDEX*/
+.fondo{
+    background: #FDBE13;  
+    padding: 10px;
+    padding-left: 65%;
+}
+
+.logo{
+    position: absolute;
+    left: 20px;
+}
+
+.nav-link{
+    color:white;
+}
+.nav-link:hover {
+    background-color: transparent; /* Restaurar el color de fondo predeterminado */
+}
+
+.nav-link:hover,
+.nav-link:hover {
+    background-color: #b8b8b8; /* Color gris al pasar el mouse */
+    color: #ffffff; /* Cambiar el color del texto al pasar el mouse */
+}
+
+
+@font-face {
+    font-family: 'MochaccinoDemoRegular';
+    src: url('../public/font/MochaccinoDemoRegular.ttf') format('truetype');
+}
+
+.titulo{
+    font-family: 'MochaccinoDemoRegular', sans-serif;
+    background-color: #FDBE13;
+    text-align: center;
+    position: sticky;
+    top: 60px; /* Margen entre el navbar y el elemento */
+    width: 102; /* Ancho del elemento */
+    z-index: 1;
+}
+
+.titulo-info{
+    color:#FDBE13; 
+}
+
+.info{
+    padding-left: 20px;
+}
+
+.icono-contacto{
+    margin-top: -40px;
+    margin-right: 70px;
+    position: fixed;
+    z-index: 1;
+    transition: transform 0.3s;
+    text-align: right;
+}
+
+/*similar a mouseover en  js para flotar*/
+.icono-contacto:hover {
+    transform: translateY(-5px);
+}
+
+.icono-contacto:active {
+    transform: translateY(0);
+}
+
+.imagen-gente{
+    object-fit: cover;
+}
+
+/* DISCIPLINA*/
+.seleccion{
+    width: 400px;
+    margin-left: 20%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.nombre{
+    color: #FDBE13;
+    font-size: 25px;
+}
+
+.boton-estadisticas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 70px; 
+}
+
+.contenido{ /*para que todos los que tengan esta clase se vean solo cuando los habilito en js*/
+    display: none;
+}
+
+.modal-dialog {
+    max-height: 700px;
+}
